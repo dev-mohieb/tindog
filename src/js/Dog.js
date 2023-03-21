@@ -34,7 +34,7 @@ class Dog{
         const {name, avatar, age, bio} = this
         return `
                 <figure class="flex flex-col justify-end relative h-[600px] rounded-2xl opacity-0 transition-opacity overflow-hidden"
-                style="background-image: url('/src/${avatar}');
+                style="background-image: url('/${avatar}');
                        background-size: cover;
                        background-position: center;"
                        >
@@ -42,12 +42,12 @@ class Dog{
                     class="absolute w-[234px] top-14 left-0 mt-4 -rotate-[30deg]">
                         <img
                         id="like-badge"
-                        src="/src/images/badge-like.png" 
+                        src="/images/badge-like.png" 
                         class="absolute left-0 opacity-0 transition-opacity"
                         alt="">
                         <img
                         id="reject-badge"
-                        src="/src/images/badge-nope.png" 
+                        src="/images/badge-nope.png" 
                         class="absolute left-0 opacity-0 transition-opacity"
                         alt="">
                     </section>
