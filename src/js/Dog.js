@@ -15,7 +15,7 @@ class Dog{
             render()
             heartBtn.disabled = false;
             crossBtn.disabled = false;
-        }, 1000);
+        }, 800);
     }
     handleRejectClick() {
         this.hasBeenSwiped = true;
@@ -28,7 +28,7 @@ class Dog{
             render()
             heartBtn.disabled = false;
             crossBtn.disabled = false;
-        }, 1000);
+        }, 800);
     }
     getDogHtml() {
         const {name, avatar, age, bio} = this
