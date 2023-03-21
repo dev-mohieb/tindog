@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gradient-to-b from-white to-[#f6f7fb]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITLE & ICON -->
+    <title>Tindog | Mohieb</title>
+    <link
+      rel="shortcut icon"
+      href="/src/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JS and CSS -->
+    <link rel="stylesheet" href="/src/dist/output.css" />
+    <script src="/src/index.js" type="module" defer></script>
+  </head>
+  <body
+    class="flex flex-col justify-between mx-auto min-w-[375px] max-w-[650px] min-h-screen"
+  >
+    <nav class="flex justify-between items-center px-5 py-6 bg-white">
+      <img src="/src/images/profile-icon.svg" width="34" height="34" alt="" />
+      <img src="/src/images/logo-icon.svg" width="84" height="42" alt="" />
+      <img src="/src/images/chat-icon.svg" width="34" height="34" alt="" />
+    </nav>
+    <main>
+      <!-- Post section -->
+      <section id="post" class="px-2"></section>
+      <!-- Buttons section -->
+      <section class="flex justify-center items-center gap-6 py-6">
+        <button
+          class="bg-white p-6 drop-shadow-lg rounded-full cursor-default active:bg-[#FFE7EF] active:scale-95 transition-all md:hover:scale-105 md:active:scale-95 md:hover:bg-[#FFE7EF] md:cursor-pointer"
+          id="cross-btn"
+        >
+          <img src="/src/images/cross-icon.svg" width="26" height="26" alt="" />
+          <p class="sr-only">reject</p>
+        </button>
+        <button
+          class="bg-white p-6 drop-shadow-lg rounded-full cursor-default active:bg-[#DBFFF4] active:scale-95 transition-all md:hover:scale-105 md:active:scale-95 md:hover:bg-[#DBFFF4] md:cursor-pointer"
+          id="heart-btn"
+        >
+          <img src="/src/images/heart-icon.svg" width="30" height="30" alt="" />
+          <p class="sr-only">accept</p>
+        </button>
+      </section>
+    </main>
+    <footer
+      class="text-center font-poppins py-2 rounded-t-3xl bg-gradient-to-t from-white to-white/50"
+    >
+      Created by
+      <a href="https://www.github.com/dev-mohieb" 
+      target="_blank"
+      class="underline">Mohieb</a>
+    </footer>
+    <!-- script tag for old browsers -->
+    <script src="/src/index.js" type="module"></script>
+  </body>
+</html>
