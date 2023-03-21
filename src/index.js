@@ -14,7 +14,7 @@ function getNewDog() {
   setTimeout(() => {
     dogIndex === dogsData.length - 1 ? handleNoMoreDogs() : dogIndex++;
     dog = new Dog(dogsData[dogIndex]);
-  }, 1000);
+  }, 800);
 }
 
 function handleNoMoreDogs() {
@@ -37,7 +37,7 @@ function handleNoMoreDogs() {
         `;
   setTimeout(() => {
     document.querySelector("main > section").classList.toggle("opacity-0");
-  }, 100);
+  }, 200);
 }
 
 function getLikedDogsHtml() {
@@ -47,7 +47,7 @@ function getLikedDogsHtml() {
         <section class="text-xl w-[30%]">
             <img
             class="rounded-md aspect-[10/14] object-cover" 
-            src="/src/${dog.avatar}" alt="">
+            src="/${dog.avatar}" alt="">
             <h3>${dog.name}</h3>
         </section>
         `;
@@ -67,7 +67,7 @@ function render() {
   postEl.innerHTML = dog.getDogHtml();
   setTimeout(() => {
     document.querySelector("figure").classList.toggle("opacity-0");
-  }, 100);
+  }, 200);
 }
 render();
 
