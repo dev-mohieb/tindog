@@ -56,11 +56,14 @@ function getLikedDogsHtml() {
 }
 
 heartBtn.addEventListener("click", () => {
-  likedDogs.push(dog);
-  dog.handleLikeClick();
+  likedDogs.push(dog)
+  dog.hasBeenLiked = true;
+  dog.handleBtnClick('#like-badge')
 });
+
 crossBtn.addEventListener("click", () => {
-  dog.handleRejectClick();
+  dog.hasBeenSwiped = true;
+  dog.handleBtnClick('#reject-badge')
 });
 
 function render() {

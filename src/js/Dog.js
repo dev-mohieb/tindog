@@ -4,27 +4,13 @@ class Dog{
     constructor(data){
         Object.assign(this, data)
     }
-    handleLikeClick() {
-        this.hasBeenLiked = true;
+    handleBtnClick(badge) {
         heartBtn.disabled = true;
         crossBtn.disabled = true;
         getNewDog()
-        document.querySelector('#like-badge').classList.toggle('opacity-0')
+        document.querySelector(`${badge}`).classList.toggle('opacity-0')
         setTimeout(() => {
-            document.querySelector('#like-badge').classList.toggle('opacity-0')
-            render()
-            heartBtn.disabled = false;
-            crossBtn.disabled = false;
-        }, 800);
-    }
-    handleRejectClick() {
-        this.hasBeenSwiped = true;
-        heartBtn.disabled = true;
-        crossBtn.disabled = true;
-        getNewDog()
-        document.querySelector('#reject-badge').classList.toggle('opacity-0')
-        setTimeout(() => {
-            document.querySelector('#reject-badge').classList.toggle('opacity-0')
+            document.querySelector(`${badge}`).classList.toggle('opacity-0')
             render()
             heartBtn.disabled = false;
             crossBtn.disabled = false;
