@@ -26,7 +26,7 @@ const dogs = [
   {
     name: "Charles",
     avatar: "images/dog-charles.jpg",
-    age: 30,
+    age: 35,
     bio: "I swear I'm not Rex",
     hasBeenSwiped: false,
     hasBeenLiked: false,
@@ -34,7 +34,7 @@ const dogs = [
   {
     name: "Teddy",
     avatar: "images/dog-teddy.jpg",
-    age: 30,
+    age: 27,
     bio: "How you doin?",
     hasBeenSwiped: false,
     hasBeenLiked: false,
