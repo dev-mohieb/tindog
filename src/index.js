@@ -67,6 +67,9 @@ crossBtn.addEventListener("click", () => {
 });
 
 function render() {
+  document.querySelector('head').innerHTML+= `
+  <link rel="preload" href="${dogsData[++dogIndex].avatar}" as="image">
+  `
   postEl.innerHTML = dog.getDogHtml();
   setTimeout(() => {
     document.querySelector("figure").classList.toggle("opacity-0");
