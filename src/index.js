@@ -6,7 +6,6 @@ const crossBtn = document.querySelector("#cross-btn");
 const postEl = document.querySelector("#post");
 const main = document.querySelector("main");
 
-let nextDogIndex = 1
 let dogIndex = 0;
 let dog = new Dog(dogsData[dogIndex]);
 const likedDogs = [];
@@ -68,9 +67,6 @@ crossBtn.addEventListener("click", () => {
 });
 
 function render() {
-  document.querySelector('head').innerHTML+= `
-  <link rel="preload" href="${dogsData[nextDogIndex].avatar}" as="image">
-  `
   postEl.innerHTML = dog.getDogHtml();
   setTimeout(() => {
     document.querySelector("figure").classList.toggle("opacity-0");
