@@ -56,14 +56,14 @@ function getLikedDogsHtml() {
 }
 
 heartBtn.addEventListener("click", () => {
-  likedDogs.push(dog)
+  likedDogs.push(dog);
   dog.hasBeenLiked = true;
-  dog.handleBtnClick('#like-badge')
+  dog.handleBtnClick("#like-badge");
 });
 
 crossBtn.addEventListener("click", () => {
   dog.hasBeenSwiped = true;
-  dog.handleBtnClick('#reject-badge')
+  dog.handleBtnClick("#reject-badge");
 });
 
 function render() {
@@ -71,7 +71,6 @@ function render() {
   setTimeout(() => {
     document.querySelector("figure").classList.toggle("opacity-0");
   }, 200);
-  nextDogIndex++
 }
 render();
 
